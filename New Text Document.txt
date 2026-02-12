@@ -1,0 +1,9 @@
+Cust_ID,Name,Price,Location,Payment,Date
+101,Alice,70000.00,Kalaburagi,Cash,2025-11-22
+102,Bob,3000.89,HumNabad,UPI,2026-12-2
+103,Charlie,1200.77,Hyderabad,,2025-8-12
+104,Keerti,2199, Manglore,UPI,2026-1-1
+104,Keerti,2199,Manglore,UPI,2026-1-1
+105,Aejaz,,Mysore,,2024-12-12
+106,,305.05,KalabuRagi,Cash,2020-10-11
+107,Abia,20201.98,Kalaburagi,2025-1-24
