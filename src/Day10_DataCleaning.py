@@ -18,12 +18,12 @@ print("Duplicate rows:",df.duplicated().sum())
 #Task 2: The Type Fixer
 print("TASK 2")
 cf=pd.read_csv("customer_orders1.csv")
+print(cf["Price"])
 cf["Price"]=cf["Price"].str.replace('$','')
 cf["Price"]=cf["Price"].str.replace(',','')
 cf["Price"]=cf["Price"].astype(float)
 cf["Date"]=pd.to_datetime(cf["Date"])
 print("Data Types:\n",cf.dtypes)
-print(cf.head())
 
 #Task 3: The Categorical Standardizer
 print("TASK 3")
