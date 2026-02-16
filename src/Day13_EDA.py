@@ -1,0 +1,52 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# TASK 1: The Distribution Deep-Dive
+print("TASK 1")
+df=pd.read_csv("Housing.csv")
+plt.subplot(1,2,1)
+sns.histplot(df["price"],kde=True)
+plt.title('Histogram of Price')
+plt.xlabel('Price')
+plt.ylabel('Count')
+plt.show()
+print("Skewness of PRICE",df['price'].skew())
+print("Kurtosis of PRICE",df["price"].kurt())
+plt.subplot(1,2,2)
+sns.countplot(x='furnishingstatus',data=df)
+plt.title('Count of Furnishing Status')
+plt.xlabel('Count')
+plt.ylabel('Furnishing Status')
+plt.show()
+plt.tight_layout()
+
+# TASK 2: The Relationship  Map
+print("TASK 2")
+plt.subplot(1,2,1)
+plt.scatter(x="area",y='price',data=df)
+plt.title('Area vs Price')
+plt.xlabel('Area')
+plt.ylabel('Price')
+plt.show()
+plt.subplot(1,2,2)
+sns.boxplot(x=df['furnishingstatus'],y=df['price'])
+plt.xlabel('Furnishing Status')
+plt.ylabel('Price')
+plt.show()
+plt.tight_layout()
+print("AS FURNISHING STATUS INCREASES PRICE OF HOUSE ALSO INCREASES")
+
+# TASK 3: The Pattern Finder
+print("TASK 3")
+plt.subplot(1,2,1)
+corr_matrix=df.corr(numeric_only=True)
+print(corr_matrix)
+print("There are no two variables with correlation score higher than 0.8")
+sns.heatmap(corr_matrix,annot=True)
+plt.show()
+plt.subplot(1,2,2)
+sns.boxplot(x=df['price'])
+plt.xlabel('Price')
+plt.show()
+plt.tight_layout()

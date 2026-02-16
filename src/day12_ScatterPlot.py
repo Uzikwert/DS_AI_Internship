@@ -7,5 +7,3 @@ plt.ylabel("Scores")
 plt.title("Scatter Plot")
 plt.scatter(study_hours,scores)
 plt.show()
-
-
