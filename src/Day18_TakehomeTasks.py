@@ -13,4 +13,4 @@ print("Count of interns in each track:\n",cf)
 #Task 2: The Data Connector (JOINs & Python Integration)
 
 df = pd.read_sql_query("SELECT interns.name,mentors.mentor_name FROM interns INNER JOIN mentors ON interns.track=mentors.mentor_track", conn)
-print("List of interns and their mentors:\n",df)
+print("Mentors of each intern are:\n",df)
