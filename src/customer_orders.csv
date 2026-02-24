@@ -1,4 +1,4 @@
-Cust_ID,Name,Price,Location,Payment,Date
+gCust_ID,Name,Price,Location,Payment,Date
 101,Alice,70000,  Kalaburagi,Cash,
 102,Bob,3000.89,HumNabad,UPI,1/3/2024
 103,Charlie,,Hyderabad,Card,1/2/2024
