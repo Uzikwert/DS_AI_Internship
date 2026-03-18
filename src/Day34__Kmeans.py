@@ -16,7 +16,10 @@ for k in K_range:
 
 print("K values tested: ", list(K_range))
 print("Inertia values: ", [round(i, 2) for i in inertia])
-
+plt.plot(inertia,marker='o')
+plt.xlabel('K Value')
+plt.ylabel('Inertia')
+plt.show()
 # Visualization Of K-Means CLustering
 #a) Generate data
 X, _ = make_blobs(n_samples=300, centers=4, random_state=42)
