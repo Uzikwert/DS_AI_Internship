@@ -1,4 +1,4 @@
-CustomerID,Age,Gender,City,Education,MaritalStatus,AnnualIncome,AnnualIncome,YearsEmployed,PurchaseFrequency,OnlineVisitsPerMonth,ReturnedItems,PreferredDevice,LastPurchaseAmount
+CustomerID,Age,Gender,City,Education,MaritalStatus,AnnualIncome,SpendingScore,YearsEmployed,PurchaseFrequency,OnlineVisitsPerMonth,ReturnedItems,PreferredDevice,LastPurchaseAmount
 1001,49,Male,Pune,Masters,Single,82953,66,23,19,9,2,Laptop,3944
 1002,44,Male,Pune,PhD,Single,60610,56,22,1,23,3,Desktop,3885
 1003,42,Male,Mumbai,Bachelors,Single,35501,44,18,10,29,3,Laptop,3247
